@@ -1,0 +1,336 @@
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #FBFADF; /* Lightest pastel color */
+    color: #342b2b; /* Rich brown */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #342b2b;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: #342b2b;
+}
+
+a:hover {
+    color: #FABE96; /* Slight color change on hover */
+}
+
+header {
+    background-color: #EFA492; /* Pastel Coral */
+    color: #FFF;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+nav {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #FABE96; /* Light pastel hover effect */
+    color: #FFF;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #FABE96, #FBFADF);
+    padding: 80px 0;
+    color: #342b2b;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Links Section */
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.link-item {
+    flex: 1;
+    text-align: center;
+}
+
+.link-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Set a maximum width */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.link-item img:hover {
+    transform: scale(1.05);
+}
+
+.link-item p {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #FAD19E; /* Lighter pastel orange */
+    color: #342b2b;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Page Title Background Image */
+.page-title {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    color: #FFF;
+    text-align: center;
+}
+
+.page-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(201, 148, 135, 0.6); /* Same color as heading background with opacity */
+    z-index: 1; /* Ensures the overlay is above the background image but below the text */
+}
+
+.page-title h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 20px;
+    background: rgba(177, 155, 155, 0); /* Dark overlay for text readability */
+    display: inline-block;
+    position: relative;
+    z-index: 2; /* Ensures text is above the overlay */
+}
+
+/* Timeline Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1.2rem; /* Larger font size for better readability */
+}
+
+th, td {
+    padding: 15px;
+    border: 2px solid #342b2b; /* Border color and thickness */
+    text-align: left;
+}
+
+th {
+    background-color: #EFA492; /* Header background color */
+    color: #FFF;
+    font-weight: bold;
+}
+
+td {
+    background-color: #FFF; /* Cell background color */
+}
+
+/* Table Header and Row Styling */
+thead {
+    border-bottom: 2px solid #342b2b; /* Border below the header */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F9F9F9; /* Alternating row colors for readability */
+}
+
+tbody tr:hover {
+    background-color: #F2D8C0; /* Highlight row on hover */
+}
+
+/* Responsive Table Styling */
+@media (max-width: 768px) {
+    table {
+        font-size: 1rem; /* Slightly smaller font size on smaller screens */
+    }
+/* Global Styles for Background Images */
+header {
+    background: url('images/phoenix-background.jpg') no-repeat center center/cover; /* Add your image path */
+    color: #FFF;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .overlay {
+    background-color: rgba(239, 164, 146, 0.7); /* Same color as header background with transparency */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Section Styling */
+.additional-insights,
+.informative-links,
+.newsletter-signup,
+.question-form {
+    margin: 60px 0;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.additional-insights p,
+.informative-links ul,
+.newsletter-signup form,
+.question-form form {
+    font-size: 1.1rem;
+}
+
+/* Informative Links */
+.informative-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.informative-links li {
+    margin-bottom: 10px;
+}
+
+.informative-links a {
+    color: #342b2b;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.informative-links a:hover {
+    color: #FABE96; /* Light pastel hover effect */
+}
+
+/* Newsletter Signup and Question Form */
+.newsletter-signup form,
+.question-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter-signup input[type="email"],
+.question-form input[type="text"],
+.question-form textarea {
+    padding: 12px;
+    border: 2px solid #EFA492; /* Pastel Coral */
+    border-radius: 20px; /* More rounded for a cute look */
+    font-size: 1.1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.newsletter-signup input[type="email"]::placeholder,
+.question-form input[type="text"]::placeholder,
+.question-form textarea::placeholder {
+    color: #EFA492; /* Match the border color */
+}
+
+.newsletter-signup button,
+.question-form button {
+    padding: 12px;
+    background-color: #EFA492; /* Pastel Coral */
+    color: #FFF;
+    border: none;
+    border-radius: 20px; /* Match the input fields */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.newsletter-signup button:hover,
+.question-form button:hover {
+    background-color: #FABE96; /* Light pastel hover effect */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+.question-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbolism of the Phoenix</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 40px; /* Space below dropdown for footer */
+        }
+
+        .dropdown select {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.2rem;
+            border: 2px solid #EFA492; /* Pastel Coral */
+            border-radius: 5px;
+            background-color: #FBFADF; /* Lightest pastel color */
+            color: #342b2b;
+            appearance: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .dropdown select:focus {
+            outline: none;
+            border-color: #FABE96; /* Slight color change on focus */
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #FBFADF; /* Lightest pastel color */
+            border: 2px solid #EFA492; /* Pastel Coral */
+            border-radius: 5px;
+            width: 100%;
+            z-index: 1;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown-content.active {
+            display: block;
+        }
+
+        .dropdown-content p {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .dropdown-content h3 {
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+
+        .intro p.italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="symbolism.html">Symbolism</a></li>
+                <li><a href="more-about.html">More</a></li>
+            </ul>
+        </nav>
+        <div class="page-title" style="background-image: url('images/title-image.jpg');">
+            <h1>History of the Phoenix</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Symbolism of the Phoenix</h2>
+            <p>The Phoenix is a powerful symbol of rebirth, renewal, and immortality. Throughout various cultures and historical periods, this mythical bird has represented the cyclical nature of life, rising from its ashes to start anew. The Phoenix’s symbolism extends into many aspects of human experience, from cultural representations to scientific phenomena and artistic expressions.</p>
+            <p class="italic">Use the following dropdown to learn more about specific symbols of the Phoenix and how it manifests in different contexts and traditions!</p>
+        </section>
+
+        <div class="dropdown">
+            <select id="category-select">
+                <option value="pop-culture">Phoenix in Popular Culture</option>
+                <option value="scientific-phoenix">Scientific Phoenix</option>
+                <option value="phoenix-across-cultures">Phoenix Across Cultures</option>
+                <option value="astrology-alchemy">Phoenix in Astrology and Alchemy</option>
+                <option value="art-tattoos">Phoenix-Inspired Art and Tattoos</option>
+                <option value="religion">Phoenix in Religion</option>
+                <option value="famous-stories">Famous Phoenix Stories</option>
+            </select>
+            <div id="pop-culture" class="dropdown-content">
+                <h3>Phoenix in Popular Culture</h3>
+                <p>The Phoenix appears frequently in movies, books, and video games, often symbolizing rebirth or renewal. Examples include:</p>
+                <ul>
+                    <li><strong>X-Men:</strong> Jean Grey as the Phoenix.</li>
+                    <li><strong>Fantastic Beasts:</strong> The Thunderbird, inspired by the Phoenix.</li>
+                    <li><strong>Video Games:</strong> Phoenix symbolism in Final Fantasy and other titles.</li>
+                </ul>
+            </div>
+            <div id="scientific-phoenix" class="dropdown-content">
+                <h3>Scientific Phoenix</h3>
+                <p>This section blends mythology with science, explaining how certain real-world phenomena mimic aspects of the Phoenix:</p>
+                <ul>
+                    <li><strong>Molting Birds:</strong> Birds that molt and grow new feathers, akin to the Phoenix's rebirth.</li>
+                    <li><strong>Ecosystem Regeneration:</strong> Forests and other ecosystems that regenerate after fires, symbolizing rebirth from ashes.</li>
+                </ul>
+            </div>
+            <div id="phoenix-across-cultures" class="dropdown-content">
+                <h3>Phoenix Across Cultures</h3>
+                <p>Different cultures have unique interpretations of the Phoenix or similar creatures:</p>
+                <ul>
+                    <li><strong>Bennu Bird:</strong> Egyptian mythology's Bennu bird as a precursor to the Phoenix.</li>
+                    <li><strong>Fenghuang:</strong> The Chinese phoenix-like creature with mythological significance.</li>
+                    <li><strong>Thunderbirds:</strong> Native American Thunderbirds with phoenix-like traits.</li>
+                </ul>
+            </div>
+            <div id="astrology-alchemy" class="dropdown-content">
+                <h3>Phoenix in Astrology and Alchemy</h3>
+                <p>The Phoenix appears in both astrology and alchemical traditions:</p>
+                <ul>
+                    <li><strong>Alchemy:</strong> The transformation process of base materials into gold, similar to the Phoenix's rebirth.</li>
+                    <li><strong>Astrology:</strong> The Phoenix's significance in the Scorpio constellation or other astrological interpretations.</li>
+                </ul>
+            </div>
+            <div id="art-tattoos" class="dropdown-content">
+                <h3>Phoenix-Inspired Art and Tattoos</h3>
+                <p>Artists and tattoo designers have depicted the Phoenix in various styles:</p>
+                <ul>
+                    <li><strong>Art Gallery:</strong> Famous paintings or digital art featuring Phoenixes.</li>
+                    <li><strong>Tattoo Gallery:</strong> Popular Phoenix tattoo designs and their symbolism.</li>
+                </ul>
+            </div>
+            <div id="religion" class="dropdown-content">
+                <h3>Phoenix in Religion</h3>
+                <p>Religious beliefs often incorporate the Phoenix symbol:</p>
+                <ul>
+                    <li><strong>Early Christianity:</strong> The Phoenix as a symbol of Christ’s resurrection.</li>
+                    <li><strong>Islamic Tradition:</strong> The Phoenix as a symbol of divine renewal.</li>
+                </ul>
+            </div>
+            <div id="famous-stories" class="dropdown-content">
+                <h3>Famous Phoenix Stories</h3>
+                <p>The Phoenix features in various myths and literature:</p>
+                <ul>
+                    <li><strong>Harry Potter:</strong> Fawkes the Phoenix as a central character.</li>
+                    <li><strong>Bennu Bird:</strong> The Phoenix’s role in Egyptian mythology.</li>
+                    <li><strong>Chinese Folklore:</strong> The Phoenix’s role in Chinese myths.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Phoenix Mythology</p>
+    </footer>
+
+    <script>
+        document.getElementById('category-select').addEventListener('change', function() {
+            const value = this.value;
+            document.querySelectorAll('.dropdown-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            if (value) {
+                document.getElementById(value).classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
